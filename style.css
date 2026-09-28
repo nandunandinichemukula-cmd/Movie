@@ -1,0 +1,22 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f6fa;color:#172033}
+header{height:64px;background:#081a33;color:white;display:flex;align-items:center;padding:0 5%;gap:35px}
+.logo{font-size:21px;font-weight:bold}.logo:first-letter{color:#ff3155}
+nav{display:flex;gap:25px;font-size:14px}nav a{color:white}
+header input{margin-left:auto;width:230px;padding:10px 14px;border-radius:7px;border:0}
+.hero{background:linear-gradient(90deg,#061528,#152d4c);color:white;padding:55px 6%;height:190px}
+.hero h1{font-size:38px;margin:0}.hero span{color:#ff3155}.hero p{font-size:17px}
+main{padding:28px 5%}.movie-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px}
+.card,.panel{background:white;border-radius:10px;padding:18px;box-shadow:0 3px 12px #0001}
+.poster{height:210px;border-radius:8px;display:flex;align-items:end;padding:12px;color:white;font-size:24px;font-weight:bold;background:linear-gradient(145deg,#273b63,#8d162c)}
+.card:nth-child(2) .poster{background:linear-gradient(145deg,#7b2e10,#1c0b06)}
+.card:nth-child(3) .poster{background:linear-gradient(145deg,#07556a,#0c1825)}
+.card:nth-child(4) .poster{background:linear-gradient(145deg,#67452d,#15120f)}
+.card h3{margin:12px 0 5px}.card p{font-size:13px;color:#667085}
+button{border:0;border-radius:7px;padding:11px 16px;cursor:pointer}.primary{background:#f52d55;color:white;width:100%;font-weight:bold}.book{background:#f52d55;color:white;width:100%}
+.hidden{display:none!important}.booking{margin-top:30px}.back{margin-bottom:15px;background:#ddd}.booking-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.booking input{display:block;width:100%;padding:12px;margin:10px 0;border:1px solid #ddd;border-radius:6px}
+.seats{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}.seat{padding:8px 2px;background:#eee;border-radius:4px;text-align:center;cursor:pointer;font-size:11px}.seat.selected{background:#f52d55;color:white}.screen{text-align:center;background:#dbe8ff;padding:8px;border-radius:50%;font-size:11px}
+.panel label{display:block;margin:14px 0}
+.modal{position:fixed;inset:0;background:#0008;display:flex;align-items:center;justify-content:center}.success-card{background:white;border-radius:12px;padding:35px;text-align:center;width:min(420px,90%)}.check{margin:auto;width:55px;height:55px;border-radius:50%;background:#1fba72;color:white;font-size:40px}.success-card small{display:block;margin-top:12px;color:#777}
+@media(max-width:700px){header{gap:10px}nav{display:none}header input{width:150px}.hero h1{font-size:30px}.booking-grid{grid-template-columns:1fr}}
